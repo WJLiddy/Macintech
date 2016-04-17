@@ -1,0 +1,40 @@
+{% load staticfiles %}
+<title>macin.tech</title>
+<h1 style="font-family:Comic sans MS;font-size:420%;"><center><strong>macin.tech</strong></center></h1>
+
+<center>
+<table border="10">
+<tr><td><img src="{% static 'vape_me.jpg' %}"/></tr>
+</table>
+</center>
+
+<p><center style="font-family:Comic sans MS;font-size:200%">Add some <i>aesthetic</i> to your music!</center></p>
+<p><center style="font-family:Comic sans MS;">Give us a band name, and we'll take one of their albums and make it vaporwave.<!-- Or you can just generate a random vaporwave song.</center></p>
+
+<p><center style="font-family:Comic sans MS;">Just make your selection below.--></center></p>
+<p><center style="font-family:Comic sans MS;font-size:200%;"> <strong>It's your move.</strong></center></p>
+<p>&nbsp;</p>
+
+<form action="/resulting-vapor" method="POST">
+{% csrf_token %}
+  <center style="font-family:Comic sans MS;">Enter a band name:
+  <input type="text" name="band">
+  <input type="submit" value="MAC MY S*** UP!!"><br></center>
+</form>
+
+<center><input type="button" value="Hear a preview" onclick="play()"></center>
+<script>
+  function play(){
+       var audio = document.getElementById("audio");
+       audio.play();
+  }
+</script>
+<audio id="audio" src="{% static 'preview.wav' %}"></audio>
+
+<!--<form action="????">
+  <center>
+    <input type="submit" value="Make a random vaporwave song..." style="height:50px;width:250px"><br>
+  </center>
+</form>-->
+
+<p><center style="font-family:Comic sans MS;">So far, we've made a total of <strong>{{ vapors }}</strong> vaporwave songs and albums.</center></p>

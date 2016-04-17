@@ -1,0 +1,23 @@
+<title>Results</title>
+<h1 style="font-family:Comic sans MS;font-size:420%;"><center><strong><i>!!! ~~~ VAPE SUCCESS ~~~ !!!</i></strong></center></h1>
+
+<center>
+<table border="10">
+<tr><td><img src={{ img }}></tr>
+</tbody></table>
+</center>
+
+<p><center style="font-family:Comic sans MS;font-size:200%">Congrats! We successfully made some vaporwave for you:</center></p>
+
+<center style="font-size:200%"><a href={{ songlink }} download={{ songname }}><p>{{ songname }}</p></a></center>
+
+<center><input type="button" value="Preview"  onclick="play()"></center>
+<script>
+  function play(){
+       var audio = document.getElementById("audio");
+       audio.play();
+  }
+</script>
+<audio id="audio" src={{ songlink }}></audio>
+
+<p><center style="font-family:Comic sans MS;">So far, we've made a total of <strong>{{ vapors }}</strong> vaporwave songs and albums.</center></p>
