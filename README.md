@@ -22,3 +22,6 @@ python src/VaporMain.py youtube_query_to_vaporize
 ```
 
 For example, `python src/VaporMain.py Rebecca Black Friday` will generate a WAV in a folder called rebeccablackfriday/ that sounds something like [this](https://www.youtube.com/watch?v=vn-kloj0tKc).
+
+I put up a bandcamp with some sample songs [here](https://macintech.bandcamp.com/album/macintech-i).
+
