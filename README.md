@@ -1,6 +1,6 @@
 This code is really just around for legacy purposes.
 Go check out this instead if you want something that works:
-github.com/navanchauhan/VaporwaveGenerator
+www.github.com/navanchauhan/VaporwaveGenerator
 
 
 
