@@ -1,3 +1,9 @@
+This code is really just around for legacy purposes.
+Go check out this instead if you want something that works:
+github.com/navanchauhan/VaporwaveGenerator
+
+
+
 # Macintech Plus
 A ｖａｐｏｒｗａｖｅ generator hacked together at UncommonHacks 2016. Downloads audio from a video on youtube and turns it into vaporwave, and also gives it a vaporwave name. Uses python 2.7 with a bunch of dependencies. Now you too can slow some music down and call yourself an artist!
 
